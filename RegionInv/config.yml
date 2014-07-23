@@ -1,0 +1,46 @@
+# toggle to force using of mysql instead of the config
+# options: false/true
+# first_time: true will create two tables in the specified database
+# host: localhost
+# port: 3306
+# user: (TIPP: dont use root !!!)
+# password: (TIPP: use strong passwords only !!!)
+# database: regioninv
+use_mysql: false
+  first_time: true
+  host: localhost
+  port: 3306
+  user: inventory
+  password: password
+  database: regioninv
+
+# prevent plugin from writing anything into console
+# options: false/true
+consoleoutput: true
+
+# debug mode, to display errors, etc ...
+# options: false/true
+debug: false
+
+# hardcoded bypass ...
+# if not used leave empty, or set to false !!!
+# (TIPP: remove users listed below ...)
+bypass:
+  undeaD_D: true
+  Juli971Master: true
+  Notch: false
+
+# regions:
+#   spawn: true
+#   testregion: false
+regions:
+
+
+
+
+#-------------------------------------------------------------------------------------------------------------------------
+#---------DONT CHANGE ANYTHING BELOW--------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------
+
+# read the titel above ...
+inventory:

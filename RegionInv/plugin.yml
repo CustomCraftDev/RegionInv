@@ -1,0 +1,14 @@
+name: RegionInv
+main: diefriiks.RegionInv.RegionInv
+version: 3.0
+author: DieFriiks
+commands:
+     disableregioninv:
+          usage: /<command> <boolean>
+          description: toggles plugin	.
+     toggleregion:
+          usage: /<command> <region>
+          description: toggles RegionInv for a region.
+     toggleinv:
+          usage: /<command> <name>
+          description: toggles Inventory for a Player manually.
