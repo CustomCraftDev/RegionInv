@@ -25,12 +25,10 @@ public class EventListener implements Listener {
 	public boolean checkregion(String regionname){
 		
 		if(plugin.usemysql){
-			ResultSet r = exec.getmysql("");
+			ResultSet r = exec.getmysql("SELECT toggle FROM regions WHERE regionname = '" + regionname + "';");
 			try{
 			r.next();
-				if(r.getBoolean("")){
-					return true;
-				}
+					return r.getBoolean("toggle");
 			}
 			catch(Exception e){
 	        	if(plugin.debug){
@@ -39,9 +37,7 @@ public class EventListener implements Listener {
 			}
 		}
 		else {
-			if(plugin.config.getBoolean("regions." + regionname)){
-				return true;
-			}
+			return plugin.config.getBoolean("regions." + regionname);
 		}
 		return false;
 	}
